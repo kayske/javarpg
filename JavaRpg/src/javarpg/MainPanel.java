@@ -9,7 +9,8 @@ OP、ED
 フラグでイベントを立てれるようにする
 フラグ管理
 http://codezine.jp/article/detail/164
-
+シーンマネージャ
+http://www012.upp.so-net.ne.jp/flab/javatuto/javatuto8.html
 会話イベント、選択肢
 ↓
 アイテムイベント、アイテム管理
