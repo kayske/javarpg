@@ -1,2 +1,0 @@
-frametest.Frametest
-frametest.Ada
