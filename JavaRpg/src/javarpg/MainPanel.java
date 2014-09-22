@@ -24,6 +24,10 @@ http://www012.upp.so-net.ne.jp/flab/javatuto/javatuto8.html
 戦闘
 ↓
 仲間イベント、仲間
+↓
+スタート画面
+↓
+セーブ、ロード
 */
 package javarpg;
 import java.awt.Color;
