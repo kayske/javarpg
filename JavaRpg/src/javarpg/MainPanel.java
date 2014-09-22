@@ -265,6 +265,7 @@ class MainPanel extends JPanel implements KeyListener, Runnable, Common {
         if (g != null) {
             g.dispose();
         }
+        //g.drawString("あああ", 0, 0);
     }
     
     /**
