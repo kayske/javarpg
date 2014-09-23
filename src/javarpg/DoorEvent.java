@@ -17,7 +17,7 @@ public class DoorEvent extends Event {
      */
     public DoorEvent(int x, int y) {
         // とびらのチップ番号は18でぶつかる
-        super(x, y, 18, true);
+        super(x, y, 195, true);
     }
     
     /**

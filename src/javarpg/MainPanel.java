@@ -113,16 +113,18 @@ class MainPanel extends JPanel implements KeyListener, Runnable, Common {
         spaceKey = new ActionKey(ActionKey.DETECT_INITIAL_PRESS_ONLY);
         
         // マップを作成（マップで鳴らすBGM番号を渡す）
-        maps = new Map[2];
+        maps = new Map[3];
         // お城
         maps[0] = new Map("../map/castle.map", "../map/castle.evt", "castle", this);
         // フィールド
         maps[1] = new Map("../map/field.map", "../map/field.evt", "field", this);
-        // 最初はお城
-        mapNo = 0;
+        // op1
+        maps[2] = new Map("../map/op1.map", "../map/op1.evt", "field", this);
+        // 最初はop1
+        mapNo = 2;
         
-        // 勇者を作成
-        hero = new Chara(6, 6, 0, DOWN, 0, maps[mapNo]);
+        // OP用勇者を作成
+        hero = new Chara(10, 10, 48, DOWN, 0, maps[mapNo]);
         
         // マップにキャラクターを登録
         // キャラクターはマップに属す

@@ -287,6 +287,8 @@ public class Map implements Common {
                     makeDoor(st);
                 } else if (eventType.equals("MOVE")) {  // 移動イベント
                     makeMove(st);
+                } else if (eventType.equals("AUTO")) {  // 自動イベント
+                    makeAuto(st);
                 }
             }
         } catch (Exception e) {
@@ -374,6 +376,21 @@ public class Map implements Common {
         events.add(m);
     }
     
+    private void makeAuto(StringTokenizer st) {
+        // 自動イベントタイプ
+        int autoType = Integer.parseInt(st.nextToken());
+        if (autoType == 0) {
+            String message = st.nextToken();
+            AutoEvent a = new AutoEvent(0,message);
+            events.add(a);
+        }
+        // キャラクターを作成
+        //Chara c = new Chara(x, y, charaNo, dir, moveType, this);
+        // メッセージを登録
+        //c.setMessage(message);
+        // キャラクターベクトルに登録
+        //charas.add(c);                    
+    }
     /**
      * マップをコンソールに表示。デバッグ用。
      */

@@ -21,7 +21,7 @@ public class TreasureEvent extends Event {
      */
     public TreasureEvent(int x, int y, String itemName) {
         // 宝箱のチップ番号は17でぶつからない
-        super(x, y, 9, false);
+        super(x, y, 194, false);
         this.itemName = itemName;
     }
 
